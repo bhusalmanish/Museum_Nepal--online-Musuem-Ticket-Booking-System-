@@ -14,7 +14,10 @@ Using tools:
   Landing page:
   ![image](https://user-images.githubusercontent.com/69428947/184124523-1bc8dc4a-2155-4846-a57d-88caee496c55.png)
 
- ![image](https://user-images.githubusercontent.com/69428947/184123254-10230d50-88f6-4bba-b44a-066700a300ac.png)
+![image](https://user-images.githubusercontent.com/69428947/184125466-50831e77-5b2c-4fa6-9a0f-ca676b7e252e.png)
+![image](https://user-images.githubusercontent.com/69428947/184125531-0759cd5f-8cf5-43d5-a8e9-52b54fd873a2.png)
+![image](https://user-images.githubusercontent.com/69428947/184126029-f109a1c8-3f95-49a6-9a0d-4e2d78cf9533.png)
+
 ![image](https://user-images.githubusercontent.com/69428947/184123359-5072e5ca-9f83-43a2-8c36-58542a02852a.png)
 ![image](https://user-images.githubusercontent.com/69428947/184123453-61bcf53e-917a-480a-9463-28cbf558d441.png)
 
