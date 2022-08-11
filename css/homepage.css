@@ -1,0 +1,708 @@
+   /* global */
+   
+   * {
+       margin: 0%;
+       padding: 0%;
+       box-sizing: border-box;
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }
+   
+   ul {
+       list-style: none;
+   }
+   
+   a {
+       text-decoration: none;
+       color: black;
+   }
+   
+   body,
+   html {
+       overflow-x: hidden;
+   }
+   
+   .homepage#home.active {
+       filter: blur(15px);
+       pointer-events: none;
+       user-select: none;
+   }
+   
+   nav {
+       display: flex;
+       padding: 0.5rem 1.4rem;
+       align-items: center;
+       justify-content: space-between;
+       position: fixed;
+       z-index: 2;
+       top: 0;
+       left: 0;
+       width: 100%;
+   }
+   
+   .nav-bar.sticky {
+       padding: 10px 0;
+       box-shadow: 0 0 10px;
+       background: whitesmoke;
+   }
+   
+   .logo img {
+       width: 140px;
+       height: 52px;
+   }
+   
+   nav .primary_navigation,
+   nav .secondary_navigation {
+       display: flex;
+       gap: 1.4rem;
+       font-size: 1.4rem;
+   }
+   
+   nav .primary_navigation i {
+       margin-right: 0.4rem;
+   }
+   
+   nav .secondary_navigation a {
+       background-color: blueviolet;
+       color: white;
+       padding: 0.2rem;
+       border-radius: 0.4rem;
+   }
+   
+   .primary_navigation li a:hover {
+       color: blueviolet;
+   }
+   
+   header {
+       display: flex;
+       justify-content: center;
+       text-align: center;
+       align-items: center;
+       background-image: url(../img/narayanhiti.jpg);
+       background-size: cover;
+       background-position: center;
+       background-repeat: repeat;
+       height: 100vh;
+       width: 100vw;
+   }
+   
+   a {
+       text-decoration: none;
+   }
+   
+   .header-content {
+       margin-bottom: 150px;
+       font-size: 3vmin;
+       color: whitesmoke;
+       text-align: center;
+   }
+   
+   .button {
+       background: blueviolet;
+       padding: 2px 14px;
+       border-radius: 00.4rem;
+   }
+   /* second part museums*/
+   
+   section {
+       width: 80%;
+       margin: 80px auto;
+   }
+   
+   .title {
+       text-align: center;
+       font-size: 4vmin;
+   }
+   
+   .line {
+       width: 190px;
+       height: 4px;
+       background: blueviolet;
+       margin: 10px auto;
+   }
+   
+   .row {
+       display: flex;
+       align-items: center;
+       width: 100%;
+       justify-content: space-between;
+   }
+   
+   .col img {
+       width: 90%;
+       align-items: center;
+   }
+   
+   .row .col {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   }
+   
+   .museum .row {
+       margin-top: 50px;
+   }
+   
+   h4 {
+       font-size: 2.5vmin;
+       margin: 10px auto;
+   }
+   
+   .museum .button {
+       margin-top: 10px;
+   }
+   /* learn more */
+   
+   .learnmore {
+       background-image: url(../img/narayanhiti.jpg);
+       width: 100%;
+       height: 80vh;
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-position: center;
+   }
+   
+   .content {
+       border-bottom-right-radius: 20%;
+       opacity: 70%;
+       background-color: rgb(17, 41, 33);
+       width: 50%;
+       padding: 40px;
+       color: whitesmoke;
+   }
+   
+   .content h1 p {
+       opacity: 100%;
+   }
+   
+   .content .line {
+       width: 100px;
+       margin: 5px 0px;
+   }
+   
+   .learnmore-1 {
+       background-image: url(../img/national_museum.jpg);
+       width: 100%;
+       height: 80vh;
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-position: center;
+   }
+   
+   .content-1 {
+       width: 50%;
+       padding: 40px;
+       color: whitesmoke;
+   }
+   
+   .content-1 .line {
+       width: 100px;
+       margin: 5px 0px;
+   }
+   /* login form */
+   
+   #container1 {
+       visibility: hidden;
+       z-index: 3;
+       position: fixed;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       background-color: white;
+       box-shadow: 0 0 10px;
+       width: 350px;
+       padding: 30px;
+       border-radius: 20px;
+       opacity: 0;
+       transition: 0.2s;
+   }
+   
+   #container1.active {
+       visibility: visible;
+       opacity: 1;
+       transition: 0.5s;
+   }
+   
+   .container .text {
+       font-size: 5.5vmin;
+       text-align: center;
+       font-weight: 500;
+   }
+   
+   .forget a {
+       color: rgba(11, 54, 195, 0.951);
+   }
+   
+   form .data input {
+       height: 100%;
+       width: 100%;
+       font-size: 15px;
+   }
+   
+   form .data label {
+       font-size: 18px;
+   }
+   
+   .container form {
+       margin-top: 3px;
+   }
+   
+   .container form .data {
+       height: 33px;
+       width: 100%;
+       margin: 36px 0;
+   }
+   
+   .btn {
+       margin: 75px 0;
+       height: 1px;
+   }
+   
+   .btn button {
+       height: 30px;
+       width: 100%;
+       background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+       border: none;
+       font-size: 3vmin;
+       font-weight: 450;
+       text-transform: uppercase;
+       cursor: pointer;
+   }
+   
+   .signup {
+       margin-top: 10px;
+       text-align: center;
+   }
+   
+   .signup a {
+       color: rgba(11, 54, 195, 0.951);
+   }
+   
+   .close-btn {
+       position: absolute;
+       right: 20px;
+       top: 15px;
+       cursor: pointer;
+   }
+   
+   .close-btn:hover {
+       color: blueviolet;
+   }
+   /* register page */
+   
+   #container2 {
+       visibility: hidden;
+       z-index: 3;
+       position: fixed;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       background-color: white;
+       box-shadow: 0 0 10px;
+       width: 400px;
+       padding: 30px;
+       opacity: 0;
+       transition: 0.5s;
+   }
+   
+   #container2.active {
+       visibility: visible;
+       opacity: 1;
+       transition: 0.5s;
+   }
+   
+   .container-1 .text {
+       font-size: 5.5vmin;
+       font-weight: 500;
+       text-align: center;
+   }
+   
+   .container-1 .data-1 input {
+       width: 100%;
+       height: 100%;
+       font-size: 3vmin;
+   }
+   
+   .container-1 .data-1 label {
+       font-size: 18px;
+   }
+   
+   .container-1 form {
+       margin-top: 2px;
+   }
+   
+   .container-1 form .data-1 {
+       height: 33px;
+       width: 100%;
+       margin: 34px 0;
+   }
+   
+   .btn1 {
+       margin-top: 50px;
+   }
+   
+   .btn1 button {
+       width: 45%;
+       background-color: blueviolet;
+       border: none;
+       height: 30px;
+       cursor: pointer;
+       text-transform: uppercase;
+       display: inline;
+       margin: 7px;
+       margin-left: 1px;
+       font-size: 2.5vmin;
+   }
+   
+   .btn1 a {
+       color: rgba(11, 54, 195, 0.951);
+   }
+   
+   .login {
+       font-size: 2.5vmin;
+   }
+   
+   .login a {
+       font-size: 3vmin;
+   }
+   /* ticket */
+   
+   .ticket-container .text {
+       font-size: 5.5vmin;
+       text-align: center;
+       font-weight: 500;
+   }
+   
+   #ticket {
+       visibility: hidden;
+       position: fixed;
+       top: 50%;
+       left: 50%;
+       z-index: 4;
+       transform: translate(-50%, -50%);
+       width: 700px;
+       padding: 30px;
+       box-shadow: 0 0 10px;
+       opacity: 0;
+       transition: 0.5s;
+       background-color: white;
+   }
+   
+   #ticket.active {
+       visibility: visible;
+       opacity: 1;
+       transition: 0.5s;
+   }
+   
+   .ticket-container .data2 input {
+       width: 100%;
+       height: 100%;
+       margin: 3px;
+       font-size: 2.5vmin;
+   }
+   
+   .ticket-container .data2 select {
+       width: 100%;
+       height: 100%;
+       font-size: 2.5vmin;
+   }
+   
+   .ticket-container .data2 label {
+       font-size: 18px;
+   }
+   
+   .ticket-container form {
+       margin-top: px;
+   }
+   
+   .ticket-container form .data2 {
+       height: 33px;
+       width: 100%;
+       margin: 34px 0;
+   }
+   
+   .btn2 {
+       display: flex;
+       justify-content: space-between;
+       margin: 30px 0;
+   }
+   
+   .btn2 button {
+       margin-top: 25px;
+       width: 40%;
+       height: 30px;
+       background-color: blueviolet;
+       border: none;
+       cursor: pointer;
+       text-transform: uppercase;
+       font-size: 2.5vmin;
+   }
+   /* continue to payments */
+   
+   #details {
+       visibility: hidden;
+       top: 50%;
+       left: 50%;
+       width: 350px;
+       padding: 30px;
+       box-shadow: 0 0 10px;
+       position: fixed;
+       background-color: white;
+       transform: translate(-50%, -50%);
+       transition: 0.5s;
+       opacity: 0;
+   }
+   
+   #details.active {
+       visibility: visible;
+       opacity: 1;
+       transition: 0.5s;
+   }
+   
+   .paymentmethod .text {
+       font-size: 5.5vmin;
+       font-weight: 500;
+       text-align: center;
+       margin-bottom: 10px;
+   }
+   
+   .paymentmethod label {
+       font-size: 19px;
+   }
+   
+   .paymentmethod .list {
+       padding-left: 20px;
+       margin-top: 2px;
+       font-weight: 350;
+   }
+   
+   .line1 {
+       width: 110px;
+       height: 2px;
+       background: blueviolet;
+       margin: 1px 1px;
+   }
+   
+   .line2 {
+       width: 75px;
+       height: 2px;
+       background: blueviolet;
+       margin: 1px 1px;
+   }
+   
+   .btn3 {
+       margin-top: 20px;
+   }
+   
+   .btn3 button {
+       width: 45%;
+       background-color: blueviolet;
+       border: none;
+       height: 30px;
+       cursor: pointer;
+       text-transform: uppercase;
+       display: inline;
+       margin: 7px;
+       margin-left: 1px;
+       font-size: 2.5vmin;
+   }
+   /* final ticket */
+   
+   #tf {
+       visibility: hidden;
+       top: 50%;
+       left: 50%;
+       width: 350px;
+       padding: 30px;
+       box-shadow: 0 0 10px;
+       position: absolute;
+       background-color: white;
+       transform: translate(-50%, -50%);
+       opacity: 0;
+       transition: 0.5s;
+       border-radius: 10px;
+   }
+   
+   #tf.active {
+       visibility: visible;
+       opacity: 1;
+       transition: 0.5s;
+   }
+   
+   .finalticket .text {
+       font-size: 5.5vmin;
+       font-weight: 500;
+       text-align: center;
+       margin-bottom: 10px;
+   }
+   
+   .finalticket label {
+       font-size: 19px;
+   }
+   
+   .finalticket .list {
+       padding-left: 20px;
+       margin-top: 2px;
+       font-weight: 350;
+   }
+   
+   .line1 {
+       width: 110px;
+       height: 2px;
+       background: blueviolet;
+       margin: 1px 1px;
+   }
+   
+   .btn4 {
+       margin-top: 20px;
+   }
+   
+   .btn4 button {
+       width: 100%;
+       background-color: blueviolet;
+       border: none;
+       height: 30px;
+       cursor: pointer;
+       text-transform: uppercase;
+       display: inline;
+       margin: 7px;
+       margin-left: 1px;
+       font-size: 2.5vmin;
+   }
+   /* notice page */
+   
+   .noticepopup {
+       visibility: hidden;
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       width: 750px;
+       padding: 30px;
+       height: 500px;
+       transform: translate(-50%, -50%);
+       opacity: 0;
+       transition: 0.5s;
+       background-color: white;
+   }
+   
+   #notice {
+       visibility: hidden;
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       width: 750px;
+       padding: 30px;
+       height: 500px;
+       transform: translate(-50%, -50%);
+       opacity: 0;
+       transition: 0.5s;
+       background-color: white;
+   }
+   
+   #notice.active {
+       visibility: visible;
+       opacity: 1;
+       transition: 0.5s;
+   }
+   
+   .noticepopup .text {
+       font-size: 5.5vmin;
+       font-weight: 500;
+       text-align: center;
+   }
+   
+   .noticepopup .notice {
+       margin-top: 15px;
+   }
+   /* span  All error message section  */
+   
+   #err {
+       color: red;
+   }
+   
+   museum
+   /* Styling the open modal button */
+   
+   .modalbtn {
+       background-color: #B1A9D4;
+       border-radius: 5px;
+       padding: 15px 30px;
+       text-align: center;
+       font-size: 15px;
+       font-weight: bold;
+   }
+   /* Styling the close modal button */
+   
+   .closebtn {
+       float: right;
+       font-size: 15px;
+       font-weight: bold;
+   }
+   
+   .closebtn:hover {
+       cursor: pointer;
+   }
+   /* Styling the modal container */
+   
+   .modal {
+       display: none;
+   }
+   /* Styling the text inside the modal */
+   
+   .modalcontent {
+       position: relative;
+       font-size: 15px;
+       padding: 15px;
+       background-color: #DEDAF7;
+       width: 40%;
+       text-align: center;
+       margin: 2%;
+   }
+   /*   footer css */
+   
+   .footer1 {
+       background-color: rgba(161, 54, 255, 0.369);
+       color: #9f01ea;
+       box-shadow: 20px 1px 10px;
+       /* background-color: #c30d0d1c; */
+   }
+   /* .footer1 li {
+       color: blueviolet;
+   } */
+   
+   p {
+       color: white;
+       background-color: #9f01ea;
+   }
+   
+   #FT li {
+       display: inline;
+       padding-left: 40px;
+       height: 100px;
+   }
+   /* musueum info css */
+   
+   #museumBox {
+       height: 300;
+       border: 3px solid #af73e7;
+       padding: 10px;
+       margin: 40px;
+   }
+   
+   .img2 {
+       float: right;
+   }
+   
+   .clearfix::after {
+       content: "";
+       clear: both;
+       display: table;
+   }
+   
+   p #museum_decs {
+       color: red
+   }
+   
+   #M_title {
+       padding: 10px;
+       margin: 40px;
+   }
