@@ -8,7 +8,9 @@ Using tools:
        forntEnd : HTML , CSS, JS (JQUERY ,AJAX)
        Backend  : PHP
        Database : MySql
-
+ 
+ 
+ Develop By :   Manish Bhusal & Pratyush Dahal  (https://github.com/pratyushdahal)
 
   Demo :
   Landing page:
