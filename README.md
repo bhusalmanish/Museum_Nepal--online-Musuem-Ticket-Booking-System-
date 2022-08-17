@@ -1,6 +1,6 @@
 MUseum Nepal  - Online Ticket Booking system 
 
-intro : MUseum Nepal is  wesite for booking tickets for heritage and museum  of nepal.
+intro : Museum Nepal is  wesite for booking tickets for heritage and museum  of nepal.
         Dynamic site with Admin pannel and user pannel. Proper JS/php validation in site form (login,Signup,Ticketbooking,paymnet,Save ticket form).
        
 
