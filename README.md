@@ -38,5 +38,5 @@ Admin pannel :
 
 
 Alert!!!
- repo  is open   opensource contributor for Hacktoberfest.
-#Hacktoberfest #opensource #opensource2022 #opensource_html  #opensource_css ##opensource_js #opensource_PHP
+welcome  opensource contributor for Hacktoberfest.
+full guideline is given in hacktober_contributor_guideline.md
