@@ -1,0 +1,19 @@
+  <center><h1>hacktober_contributor_guideline  </h1> </center>
+
+for beginner :
+IF you are good at HTML ,CSS & JS. you can easily change in  following topics.
+
+Change in FrontEnd:
+ -add  "Cancel Button" in Ticket booking list.
+ -update design (css change)  in Admin Pannel.
+ 
+
+ Change in BackEnd:
+- add Logic for cancel Button
+-add dummy online  paymnet system for ticket  .( eg. paypal)
+
+
+
+
+
+
